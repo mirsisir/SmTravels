@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
+use App\Models\Package;
 use Illuminate\Http\Request;
 
 class WebsiteController extends Controller
@@ -10,5 +12,21 @@ class WebsiteController extends Controller
     {
 
         return view('website.home');
+    }
+
+
+    public function package($id)
+    {
+        $packages = Package::where('category_id',$id)->get();
+        $category = Category::find($id);
+
+        return view('website.package',compact('packages','category'));
+    }
+
+        public function package_details($id)
+    {
+        $packages = Package::find($id);
+
+        return view('website.package',compact('package'));
     }
 }
