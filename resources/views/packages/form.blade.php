@@ -49,9 +49,14 @@
         <label for="discription">Discription</label>
 
 
-            @if(' required="true"'===' required="true"') <span class="text-danger font-bolder">*</span> @endif
-        <input class="form-control  {{ $errors->has('discription') ? 'is-invalid' : '' }}" name="discription" type="text" id="discription" value="{{ old('discription', optional($package)->discription) }}" minlength="1" data=" required="true""  placeholder="Enter discription here...">
+            @if(' required="true"'===' required="true"') 
+            <span class="text-danger font-bolder">*</span> @endif
 
+            <textarea class="form-control"  name="discription" cols="50" rows="10" 
+            id="discription" minlength="1" maxlength="1000">{{ old('discription', optional($package)->discription) }}</textarea>
+
+
+     
             {!! $errors->first('discription', '<p class="form-text text-danger">:message</p>') !!}
 
     </div>

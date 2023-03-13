@@ -4,12 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Category extends Model
+class Contact extends Model
 {
     
 
 
-    protected $table = 'categories';
+    protected $table = 'contacts';
 
     /**
     * The database primary key value.
@@ -20,9 +20,9 @@ class Category extends Model
 
     protected $fillable = [
                   'name',
-                  'image',
-                  'is_active',
-                  'description'
+                  'email',
+                  'message',
+                  'phone'
               ];
 
 

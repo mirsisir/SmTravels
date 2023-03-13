@@ -14,6 +14,11 @@ class WebsiteController extends Controller
         return view('website.home');
     }
 
+    public function contact_us()
+    {
+
+        return view('website.contact');
+    }
 
     public function package($id)
     {

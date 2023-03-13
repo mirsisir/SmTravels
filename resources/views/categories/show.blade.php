@@ -47,6 +47,8 @@
             <dd>{{ asset('storage/' . $category->image) }}</dd>
             <dt>Is Active</dt>
             <dd>{{ ($category->is_active) ? 'Yes' : 'No' }}</dd>
+            <dt>Description</dt>
+            <dd>{{ $category->description }}</dd>
 
         </dl>
 

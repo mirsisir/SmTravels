@@ -19,7 +19,7 @@
                                 <h1 class="text-uppercase text-white">Hajj {{$year}}  </h1>
                                 <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp <br>
                                 or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-                                <a href="#" class="text-uppercase header-btn">Discover Now</a>
+                                <a href="{{route('package',2)}}" class="text-uppercase header-btn">Discover Now</a>
                             </div>
                         </div>
         
@@ -36,7 +36,7 @@
                                 <h1 class="text-uppercase text-white">Umrah {{$year}}                                    </h1>
                                 <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp <br>
                                 or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-                                <a href="#" class="text-uppercase header-btn">Discover Now</a>
+                                <a href="{{route('package',3)}}" class="text-uppercase header-btn">Discover Now</a>
                             </div>
                         </div>
                     </div>
@@ -52,7 +52,7 @@
                                 <h1 class="text-uppercase text-white">Air Ticketing</h1>
                                 <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp <br>
                                 or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
-                                <a href="#" class="text-uppercase header-btn">Discover Now</a>
+                                <a href="#contact" class="text-uppercase header-btn">Discover Now</a>
                             </div>
                         </div>
                     </div>
@@ -136,12 +136,12 @@
                     <div class="single-feature mb-30">
                         <div class="title d-flex flex-row pb-20">
                             <span class="lnr lnr-phone"></span>
-                            <h4><a href="#">Air Ticketing</a></h4>
+                            <h4><a href="#contact">Air Ticketing</a></h4>
                         </div>
                         <p>
                             Air Ticketing ! Looking for a perfect hotel for your trip? Contact us to get the most exciting deal on hotel booking all over the globe.
                         </p>			
-                        <a href="#" class="genric-btn success circle arrow">Success<span class="lnr lnr-arrow-right"></span></a>				
+                        <a href="#contact" class="genric-btn success circle arrow">Success<span class="lnr lnr-arrow-right"></span></a>				
                     </div>							
                 </div>
                                                                                          
@@ -218,22 +218,22 @@
             <div class="row no-padding">
                 <div class="active-gallery">
                     <div class="item single-gallery">
-                        <img src="img/g1.jpg" alt="">
+                        <img style="height:200px; object-fit:cover; objection-postion:center; " src="img/hajj9.jpg" alt="">
                     </div>	
                     <div class="item single-gallery">
-                        <img src="img/g2.jpg" alt="">
+                        <img style="height:200px; object-fit:cover; objection-postion:center; " src="img/hajj1.jpg" alt="">
                     </div>	
                     <div class="item single-gallery">
-                        <img src="img/g3.jpg" alt="">
+                        <img style="height:200px; object-fit:cover; objection-postion:center; " src="img/hajj3.jpg" alt="">
                     </div>	
                     <div class="item single-gallery">
-                        <img src="img/g4.jpg" alt="">
+                        <img style="height:200px; object-fit:cover; objection-postion:center; " src="img/hajj7.jpg" alt="">
                     </div>	
                     <div class="item single-gallery">
-                        <img src="img/g5.jpg" alt="">
+                        <img style="height:200px; object-fit:cover; objection-postion:center; " src="img/hajj8.jpg" alt="">
                     </div>	
                     <div class="item single-gallery">
-                        <img src="img/g6.jpg" alt="">
+                        <img style="height:200px; object-fit:cover; objection-postion:center; " src="img/hajj5.jpg" alt="">
                     </div>																		
                 </div>
             </div>
@@ -307,19 +307,20 @@
                 <div class="menu-content pb-60 col-lg-8">
                     <div class="title text-center">
                         <h1 class="mb-10">Contact With Us</h1>
-                        <h1 class="mb-10">If you need, Just drop us a line</h1>
+                        <h1 class="mb-10">Contact us to Get Air Tickts , Hajj Or Umrah information</h1>
                         <p>Who are in extremely love with eco friendly system.</p>
                     </div>
                 </div>
             </div>										
-            <form class="form-area " id="myForm" action="mail.php" method="post" class="contact-form text-right">
+            <form class="form-area " action="{{route('contacts.contact.store')}}" method="post"  id="myForm"  >
+                @csrf
                 <div class="row">	
                 <div class="col-lg-6 form-group">
-                    <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text">
+                    <input name="name" placeholder="Enter your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your name'" class="common-input mb-20 form-control" required="" type="text" required>
                 
                     <input name="email" placeholder="Enter email address" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'" class="common-input mb-20 form-control" required="" type="email">
         
-                    <input name="subject" placeholder="Enter your subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your subject'" class="common-input mb-20 form-control" required="" type="text">
+                    <input name="phone" placeholder="Enter your Phone" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter your phone number'" class="common-input mb-20 form-control" required="" type="phone" required>
                 </div>
                 <div class="col-lg-6 form-group">
                     <textarea class="common-textarea mt-10 form-control" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>

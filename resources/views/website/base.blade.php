@@ -18,6 +18,10 @@
         <link rel="stylesheet" href="{{asset('css/animate.min.css')}}">
         <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
         <link rel="stylesheet" href="{{asset('css/main.css')}}">
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
+
                 <style> 
                     .img-fluid {
             max-width: 100%;
@@ -27,14 +31,16 @@
                 </style>
     </head>
     <body>
+      @include('sweetalert::alert')
         <!-- start banner Area -->
         <section class=" generic-banner banner-area" id="home">
             <!-- Start Header Area -->
             <header class="default-header">
                 <nav class="navbar navbar-expand-lg  navbar-light">
                     <div class="container">
-                          <a class="navbar-brand" href="index.html">
-                              <img src="img/logo.png" alt="">
+                          <a class="navbar-brand" href="{{route('home')}}">
+                              {{-- <img src="img/logo.png" alt=""> --}}
+                              <h2 class="text-white font-weight-bold">SM Travels</h2>
                           </a>
                           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="text-white lnr lnr-menu"></span>
@@ -42,22 +48,12 @@
 
                           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>									
-                                <li><a href="#secvice">Service</a></li>
-                                <li><a href="#gallery">Gallery</a></li>
-                                <li><a href="#faq">Faq</a></li>
-                                <li><a href="#contact">Contact</a></li>
-                                <!-- Dropdown -->
-                                <li class="dropdown">
-                                  <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                                    Pages
-                                  </a>
-                                  <div class="dropdown-menu">
-                                    <a class="dropdown-item" href="generic.html">Generic</a>
-                                    <a class="dropdown-item" href="elements.html">Elements</a>
-                                  </div>
-                                </li>
+                                <li><a href="{{route('home')}}">Home</a></li>
+                                <li><a href="{{route('package',2)}}">Hajj 2023</a></li>									
+                                <li><a href="{{route('package',3)}}">Umrah</a></li>
+                                <li><a href="#contact">Air Tickts</a></li>
+                                <li><a href="{{route('contact_us')}}">Contact</a></li>
+
                             </ul>
                           </div>						
                     </div>
@@ -71,16 +67,15 @@
         
             <div style="  position: fixed;
             bottom: 60px;
-            right: 30px;
+            right: 19px;
             margin-bottom:40px;
             z-index:99999;
             ">
            <a href="https://wa.me/8801776666661" target="_blank">
-            <img src="{{asset('img/whatsapp.png')}}" width="60" alt="whatsapp">
+            <img src="{{asset('img/whatsapp.png')}}" width="65" alt="whatsapp">
           </a>
             </div>
-
-            <!-- Messenger Chat Plugin Code -->
+                   <!-- Messenger Chat Plugin Code -->
     <div id="fb-root"></div>
 
     <!-- Your Chat Plugin code -->
@@ -110,6 +105,7 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, 'script', 'facebook-jssdk'));
     </script>
+
         <!-- start footer Area -->		
         <footer class="footer-area section-gap">
             <div class="container">

@@ -98,12 +98,15 @@ class CategoriesController extends Controller
     protected function getData(Request $request)
     {
         $rules = [
-                'name' => 'string|min:1|max:255|nullable',
+                'name' => 'required|nullable|string|min:1|max:255',
             'image' => ['nullable','file'],
-            'is_active' => 'boolean|nullable', 
+            'is_active' => 'boolean|nullable',
+            'description' => 'required|nullable|string|min:1|max:1000', 
         ];
 
-        
+                if ($request->route()->getAction()['as'] == 'categories.category.store' || $request->has('custom_delete_image')) {
+            array_push($rules['image'], 'required');
+        }
         $data = $request->validate($rules);
 
         if ($request->has('custom_delete_image')) {

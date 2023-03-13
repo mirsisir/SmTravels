@@ -18,7 +18,7 @@ class CreatePackagesTable extends Migration
             $table->timestamps();
             $table->string('title', 255)->nullable();
             $table->string('image')->nullable();
-            $table->string('discription')->nullable();
+            $table->longText('discription')->nullable();
             $table->string('notes', 1000)->nullable();
             $table->string('price')->nullable();
             $table->string('time')->nullable();

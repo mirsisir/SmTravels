@@ -46,8 +46,8 @@
                         <span class="lnr lnr-arrow-right"></span>
                         <h4><a href="#">{{$package->title ?? " "}}</a></h4>
                     </div>
-                    <p>
-                        {{$package->discription}}
+                    <p class="text-justify">
+                        {{ implode(' ', array_slice(explode(' ', $package->discription), 0, 50)) }} ...
                     </p>
                     
                     <a href="#" class="genric-btn   info-border circle arrow" style="color:black  ">Info<span class="lnr lnr-arrow-right"></span></a>

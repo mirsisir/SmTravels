@@ -44,10 +44,10 @@ class Package extends Model
         return $this->belongsTo('App\Models\Category','category_id');
     }
 
-    public function img(){
-
-        return asset('storage/'.$this->image);
-    }
 
 
+            public function img()
+        {
+            return asset('storage/'.$this->image);
+        }
 }
