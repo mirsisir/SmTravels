@@ -20,7 +20,7 @@
 
             <h5  class="my-1 float-left">Categories</h5>
 
-            <div class="btn-group btn-group-sm " role="group">
+            <div class="btn-group btn-group-sm d-none" role="group">
                 <a href="{{ route('categories.category.create') }}" class="btn btn-success" title="Create New Category">
                     <i class="fas fa-fw fa-plus" aria-hidden="true"></i>
                     Create New Category
@@ -64,13 +64,7 @@
                                         <a href="{{ route('categories.category.show', $category->id ) }}"title="Show Category">
                                             <i class="fa fa-eye text-info" aria-hidden="true"></i>
                                         </a>
-                                        <a href="{{ route('categories.category.edit', $category->id ) }}" class="mx-4" title="Edit Category">
-                                            <i class="fas fa-edit text-primary" aria-hidden="true"></i>
-                                        </a>
-
-                                        <button type="submit" style="border: none;background: transparent"  title="Delete Category" onclick="return confirm(&quot;Click Ok to delete Category.&quot;)">
-                                            <i class=" fas  fa-trash text-danger" aria-hidden="true"></i>
-                                        </button>
+                                     
                                     </div>
 
                                 </form>

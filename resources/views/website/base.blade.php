@@ -8,7 +8,9 @@
     <!-- meta character set -->
     <meta charset="UTF-8">
     <!-- Site Title -->
-    <title>Adventure</title>
+    
+    <meta name="description" content="Looking for a reliable Hajj and Umrah travel agency? Look no further than SmTravels. We specialize in providing all-inclusive travel packages that cater to your needs and budget. Contact us today to start your spiritual journey.">
+    <title>SmTravels - Your Trusted Hajj and Umrah Travel Agency</title>
 
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
         <link rel="stylesheet" href="{{asset('css/linearicons.css')}}">
@@ -18,6 +20,7 @@
         <link rel="stylesheet" href="{{asset('css/animate.min.css')}}">
         <link rel="stylesheet" href="{{asset('css/owl.carousel.css')}}">
         <link rel="stylesheet" href="{{asset('css/main.css')}}">
+        
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@10.10.1/dist/sweetalert2.min.css'>
@@ -38,7 +41,7 @@
             <header class="default-header">
                 <nav class="navbar navbar-expand-lg  navbar-light">
                     <div class="container">
-                          <a class="navbar-brand" href="{{route('home')}}">
+                          <a class="navbar-brand" href="{{route('website')}}">
                               {{-- <img src="img/logo.png" alt=""> --}}
                               <h2 class="text-white font-weight-bold">SM Travels</h2>
                           </a>
@@ -48,10 +51,10 @@
 
                           <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarSupportedContent">
                             <ul class="navbar-nav">
-                                <li><a href="{{route('home')}}">Home</a></li>
+                                <li><a href="{{route('website')}}">Home</a></li>
                                 <li><a href="{{route('package',2)}}">Hajj 2023</a></li>									
                                 <li><a href="{{route('package',3)}}">Umrah</a></li>
-                                <li><a href="#contact">Air Tickts</a></li>
+                                <li><a href="{{route('website')}}/#contact">Air Tickts</a></li>
                                 <li><a href="{{route('contact_us')}}">Contact</a></li>
 
                             </ul>

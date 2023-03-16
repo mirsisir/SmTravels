@@ -22,7 +22,8 @@ class Contact extends Model
                   'name',
                   'email',
                   'message',
-                  'phone'
+                  'phone',
+                  'is_read'
               ];
 
 

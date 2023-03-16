@@ -18,14 +18,11 @@
 
         <div class="card-header d-flex align-items-center justify-content-between">
 
-            <h5  class="my-1 float-left">Contacts</h5>
+            <h5  class="my-1 float-left">Contacts <span class="badge rounded-pill bg-warning
+                 text-dark">{{$unread}}</span>
+            </h5>
 
-            <div class="btn-group btn-group-sm " role="group">
-                <a href="{{ route('contacts.contact.create') }}" class="btn btn-success" title="Create New Contact">
-                    <i class="fas fa-fw fa-plus" aria-hidden="true"></i>
-                    Create New Contact
-                </a>
-            </div>
+         
 
         </div>
 
@@ -43,6 +40,7 @@
                                 <th>Name</th>
                             <th>Email</th>
                             <th>Phone</th>
+                            <th>Is Read</th>
 
                             <th></th>
                         </tr>
@@ -53,6 +51,7 @@
                                 <td>{{ $contact->name }}</td>
                             <td>{{ $contact->email }}</td>
                             <td>{{ $contact->phone }}</td>
+                            <td>{{ ($contact->is_read) ? 'Yes' : 'No' }}</td>
 
                             <td>
 
@@ -61,13 +60,10 @@
                                 {{ csrf_field() }}
 
                                     <div class="btn-group btn-group-sm float-right " role="group">
-                                        <a href="{{ route('contacts.contact.show', $contact->id ) }}"title="Show Contact">
-                                            <i class="fa fa-eye text-info" aria-hidden="true"></i>
+                                        <a class="me-4" href="{{ route('contacts.contact.show', $contact->id ) }}"title="Show Contact">
+                                            <i class="fa fa-eye text-info "  aria-hidden="true"></i>
                                         </a>
-                                        <a href="{{ route('contacts.contact.edit', $contact->id ) }}" class="mx-4" title="Edit Contact">
-                                            <i class="fas fa-edit text-primary" aria-hidden="true"></i>
-                                        </a>
-
+                                     
                                         <button type="submit" style="border: none;background: transparent"  title="Delete Contact" onclick="return confirm(&quot;Click Ok to delete Contact.&quot;)">
                                             <i class=" fas  fa-trash text-danger" aria-hidden="true"></i>
                                         </button>

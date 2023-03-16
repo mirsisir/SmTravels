@@ -30,8 +30,9 @@ class WebsiteController extends Controller
 
         public function package_details($id)
     {
-        $packages = Package::find($id);
+        $package = Package::FindOrfail($id);
 
-        return view('website.package',compact('package'));
+        return view('website.packageDetails',compact('package'));
     }
+
 }

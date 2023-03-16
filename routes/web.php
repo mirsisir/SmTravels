@@ -21,7 +21,7 @@ use App\Http\Controllers\ContactsController;
 //     return view('welcome');
 // });
 
-Route::get('/', [WebsiteController::class, 'home'])->name('home');
+Route::get('/', [WebsiteController::class, 'home'])->name('website');
 
 Route::get('/contact_us', [WebsiteController::class, 'contact_us'])->name('contact_us');
 Route::get('/package/{id}', [WebsiteController::class, 'package'])->name('package');

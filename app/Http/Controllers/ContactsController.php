@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Contact;
 use Illuminate\Http\Request;
 use Exception;
-use RealRashid\SweetAlert\Facades\Alert;
+use Alert;
 
 class ContactsController extends Controller
 {
@@ -16,7 +16,9 @@ class ContactsController extends Controller
     {
         $contacts = Contact::paginate(25);
 
-        return view('contacts.index', compact('contacts'));
+        $unread = Contact::where('is_read' ,0)->get()->count();
+
+        return view('contacts.index', compact('contacts','unread'));
     }
 
 
@@ -34,19 +36,19 @@ class ContactsController extends Controller
             
             $data = $this->getData($request);
             
-
             Contact::create($data);
+            
 
-         
-            Alert::success('Thanks for the mesage', 'We will contact you as soon as possible. Or you can call us at 01977-118812.');
+            Alert::success('Thanks for the mesage', 'We will contact with you as soon as possible. Or you can call us at 01977-118812.');
             return back();
-
     }
 
 
     public function show($id)
     {
         $contact = Contact::findOrFail($id);
+        $contact->is_read = 1;
+        $contact->save();
 
         return view('contacts.show', compact('contact'));
     }
@@ -101,16 +103,18 @@ class ContactsController extends Controller
     protected function getData(Request $request)
     {
         $rules = [
-            'name' => '',
+                'name' => '',
             'email' => '',
             'message' => '',
-            'phone' => '', 
+            'phone' => '',
+            'is_read' => '', 
         ];
 
         
         $data = $request->validate($rules);
 
 
+        $data['is_read'] = $request->has('is_read');
 
 
         return $data;

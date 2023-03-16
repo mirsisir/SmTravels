@@ -15,10 +15,9 @@
                     <div class="row fullscreen justify-content-center align-items-center">
                         <div class="col-md-10 col-12">
                             <div class="banner-content text-center">
-                                <h4 class="text-white mb-20 text-uppercase">Discover the Colorful World</h4>
+                                <h4 class="text-white mb-20 text-uppercase">Embark on a Sacred Journey with Our Expert Hajj Travel Services</h4>
                                 <h1 class="text-uppercase text-white">Hajj {{$year}}  </h1>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp <br>
-                                or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                                <p class="text-white">Join us as we relive some of the most defining moments in the history of Islam. </p>
                                 <a href="{{route('package',2)}}" class="text-uppercase header-btn">Discover Now</a>
                             </div>
                         </div>
@@ -32,10 +31,9 @@
                     <div class="row fullscreen justify-content-center align-items-center">
                         <div class="col-md-10 col-12">
                             <div class="banner-content text-center">
-                                <h4 class="text-white mb-20 text-uppercase">Discover the Colorful World</h4>
+                                <h4 class="text-white mb-20 text-uppercase">Experience the Ultimate Pilgrimage with Our Hajj Travel Agency</h4>
                                 <h1 class="text-uppercase text-white">Umrah {{$year}}                                    </h1>
-                                <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp <br>
-                                or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                                <p class="text-white">Welcome to Luxury Umrah Packages, where we offer the top Luxury Umrah Packages for the year. Our packages are designed to provide you with the best in comfort, convenience, and spiritual guidance, ensuring that your Umrah journey is one of the most fulfilling experiences of your life.</p>
                                 <a href="{{route('package',3)}}" class="text-uppercase header-btn">Discover Now</a>
                             </div>
                         </div>
@@ -48,7 +46,7 @@
                     <div class="row fullscreen justify-content-center align-items-center">
                         <div class="col-md-10 col-12">
                             <div class="banner-content text-center">
-                                <h4 class="text-white mb-20 text-uppercase">Discover the Colorful World</h4>
+                                <h4 class="text-white mb-20 text-uppercase">Best Air Ticketin Service</h4>
                                 <h1 class="text-uppercase text-white">Air Ticketing</h1>
                                 <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod temp <br>
                                 or incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
@@ -90,6 +88,9 @@
                     <p>Browse our website to learn more about our Hajj and Umrah packages, and feel free to contact us if you have any questions. We look forward to helping you fulfill your spiritual obligations with ease and comfort.</p>
                     </div>
             </div>
+        </div>
+        <div class="info-content mt-2" style="box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;"> 
+            <p>About us: S M Travels International, since 2010 has been the leading Umrah & Hajj travel guides (Umrah and Hajj packages) in the Bangladesh with honesty and commitments. We will be there with you for all step of the way, from the moment you make your intention till the completion of your Hajj and Umrah. Umrah and Hajj packages in Bangladesh, S M Travels Internationa was founded in 2010 with a noble objective in mind to help the community fulfill the obligation of a lifetime and to enable pilgrims to travel to Islam’s holiest shrines in comfort, dignity and in a proper frame of mind. Having, therefore helped pioneer Ziyarat, Umrah and Hajj packages in Bangladesh, the S M Travels Internationa is today recognized as possibly the only truly professional organization of its kind.</p>
         </div>
         </div>
         </section>
@@ -258,28 +259,62 @@
                 <div class="faq-content ">
                     <div class="single-faq">
                         <h2 class="text-uppercase">
-                            Are your Templates responsive?
+                            Q: What services does a hajj travel agency offer?
                         </h2>
                         <p>
-                            “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
+                            A: A hajj travel agency typically offers a range of services, including visa assistance, transportation, accommodation, guidance and support throughout the Hajj journey, and other logistical arrangements.
                         </p>
                     </div>
+
                     <div class="single-faq">
                         <h2 class="text-uppercase">
-                            Does it have all the plugin as mentioned?
+                            Q: How do I choose a reputable hajj travel agency?
                         </h2>
                         <p>
-                            “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
+                            A: Look for a travel agency that is licensed and accredited by the relevant authorities, has a good track record of customer satisfaction, and offers transparent pricing and clear communication about their services.
                         </p>
                     </div>
+
                     <div class="single-faq">
                         <h2 class="text-uppercase">
-                            Can i use the these theme for my client?
+                            Q: What should I pack for Hajj?
                         </h2>
                         <p>
-                            “Few would argue that, despite the advancements of feminism over the past three decades, women still face a double standard when it comes to their behavior. While men’s borderline-inappropriate behavior.
+                            A: You should pack comfortable and modest clothing, a prayer rug, a hat or head covering, comfortable walking shoes, personal hygiene items, medication if needed, and any necessary travel documents.
                         </p>
-                    </div>												
+                    </div>
+
+                    <div class="single-faq">
+                        <h2 class="text-uppercase">
+                            Q: What are the health requirements for Hajj?
+                        </h2>
+                        <p>
+                            A: The Saudi Arabian government requires all pilgrims to be vaccinated against certain diseases and to provide proof of vaccination. Consult with your travel agency or healthcare provider for specific health requirements.
+                        </p>
+                    </div>
+
+                    <div class="single-faq">
+                        <h2 class="text-uppercase">
+                            Q: What if I need assistance during Hajj?
+                        </h2>
+                        <p>
+                            A: Your travel agency should provide you with a dedicated guide or representative who will be available to assist you throughout your Hajj journey. Additionally, there are medical and emergency services available in Mecca and other pilgrimage sites.
+                        </p>
+                    </div>
+
+                    <div class="single-faq">
+                        <h2 class="text-uppercase">
+                            Q: What is the cost of Hajj travel packages?
+                        </h2>
+                        <p>
+                            A: The cost of Hajj travel packages can vary depending on the type of package, the level of services included, the duration of the trip, and other factors. It is important to compare prices and services from different travel agencies to find the package that best fits your budget
+                        </p>
+                    </div>
+
+
+
+                     
+                    												
                 </div>									
             </div>
         </div>

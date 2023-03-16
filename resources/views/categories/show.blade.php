@@ -18,20 +18,7 @@
                         Show All Category
                     </a>
 
-                    <a href="{{ route('categories.category.create') }}" class="btn btn-success mr-2" title="Create New Category">
-                        <i class=" fas fa-fw fa-plus" aria-hidden="true"></i>
-                        Create New Category
-                    </a>
-
-                    <a href="{{ route('categories.category.edit', $category->id ) }}" class="btn btn-primary mr-2" title="Edit Category">
-                        <i class=" fas fa-fw fa-pencil-alt" aria-hidden="true"></i>
-                        Edit Category
-                    </a>
-
-                    <button type="submit" class="btn btn-danger" title="Delete Category" onclick="return confirm(&quot;Click Ok to delete Category.?&quot;)">
-                        <i class=" fas fa-fw fa-trash-alt" aria-hidden="true"></i>
-                        Delete Category
-                    </button>
+                 
                 </div>
             </form>
 

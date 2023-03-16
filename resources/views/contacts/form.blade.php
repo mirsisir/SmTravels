@@ -51,3 +51,20 @@
     </div>
 </div>
 
+<div class="form-group">
+    <div class="col-md-10">
+        <label for="is_read">Is Read</label>
+
+
+            <div class="checkbox">
+            <label for="is_read_1">
+            	<input id="is_read_1" class="" name="is_read" type="checkbox" value="1" {{ old('is_read', optional($contact)->is_read) == '1' ? 'checked' : '' }}>
+                Yes
+            </label>
+        </div>
+
+            {!! $errors->first('is_read', '<p class="form-text text-danger">:message</p>') !!}
+
+    </div>
+</div>
+

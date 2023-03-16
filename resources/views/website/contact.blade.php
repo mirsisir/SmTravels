@@ -109,12 +109,25 @@
 <!-- Start Generic Area -->
 <section class="about-generic-area pb-100">
     <div class="container border-top-generic">
-        <h3 class="about-title mb-30">Elaboration about Generic Page</h3>
+        <h3 class="about-title mb-30">S M Travels International</h3>
         <div class="row">
             <div class="col-md-12">
                 <div class="img-text">
-                    <img src="img/a.jpg" alt="" class="img-fluid float-left mr-20 mb-20">
-                    <p>Recently, the US Federal government banned online casinos from operating in America by making it illegal to transfer money to them through any US bank or payment system. As a result of this law, most of the popular online casino networks such as Party Gaming and PlayTech left the United States. Overnight, online casino players found themselves being chased by the Federal government. But, after a fortnight, the online casino industry came up with a solution and new online casinos started taking root. These began to operate under a different business umbrella, and by doing that, rendered the transfer of money to and from them legal. A major part of this was enlisting electronic banking systems that would accept this new clarification and start doing business with me. Listed in this article are the electronic banking systems that accept players from the United States that wish to play in online casinos.</p>
+                    <p>
+                        S M Travels International is a company that provides Umrah and Hajj packages in Bangladesh. 
+                        It was founded in 2010 with the aim to assist the community in fulfilling the obligation of a 
+                        lifetime and enable pilgrims to travel to Islam’s holiest shrines in comfort, dignity, and in the
+                         proper frame of mind. The company is recognized as the only truly professional organization of
+                          its kind. Luxury Umrah Packages is one of the services provided by the company, which is 
+                          designed to offer the top luxury Umrah packages for the year. The package includes 
+                          accommodations in the most luxurious 5-star hotels in Mecca and Medina, daily guided tours 
+                          of the holy sites, and all transportation to ensure that the journey is hassle-free.
+                          <br> The team of experienced travel professionals ensures that every detail of the Umrah journey
+                           is taken care of, including creating a customized itinerary that suits the pilgrim’s 
+                           preferences and budget. The company offers a range of Umrah packages to suit the pilgrim’s
+                            preferences and budget, with exceptional service available 24/7 to ensure that the journey 
+                            runs smoothly and to provide any assistance needed.
+                    </p>
                 </div>
             </div>
            
